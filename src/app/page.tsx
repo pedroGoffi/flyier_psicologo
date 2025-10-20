@@ -45,30 +45,35 @@ const clinicConfig = {
       name: "Saúde do Idoso",
       icon: Users,
       color: "#3B82A0",
-      description: "Especialista em atendimento psicológico para terceira idade, com foco em qualidade de vida e bem-estar emocional"
+      description:
+        "Atendimento psicológico voltado à terceira idade, promovendo escuta acolhedora e apoio nas transformações emocionais dessa fase da vida. Trabalho com foco na valorização da história pessoal, fortalecimento da autoestima e promoção do bem-estar psíquico e social.",
     },
     {
       id: "alzheimer",
       name: "Alzheimer e Demências",
       icon: Brain,
       color: "#5BA8C9",
-      description: "Acompanhamento de pacientes com doença de Alzheimer e familiares, oferecendo suporte emocional e orientações"
+      description:
+        "Acompanhamento especializado de pacientes e familiares, oferecendo suporte emocional diante dos desafios do cuidado. Atuação voltada à compreensão das perdas cognitivas, ao acolhimento das angústias e à orientação sobre as fases da doença, sempre com uma escuta sensível e humanizada.",
     },
     {
       id: "cuidados-paliativos",
       name: "Cuidados Paliativos",
       icon: Heart,
       color: "#6BACC9",
-      description: "Apoio psicológico em cuidados paliativos, auxiliando pacientes e familiares em momentos delicados"
+      description:
+        "Atendimento a pacientes e familiares em momentos de fragilidade, com enfoque na dignidade, no alívio do sofrimento e na escuta profunda do sujeito. O trabalho é pautado na presença empática e na construção de sentido mesmo diante da finitude.",
     },
     {
       id: "todas-idades",
       name: "Atendimento para Todas as Idades",
       icon: Shield,
       color: "#4A96B8",
-      description: "Atendimento de crianças, jovens e adultos com abordagem humanizada e personalizada"
-    }
+      description:
+        "Atendimento psicológico individual para crianças, adolescentes, adultos e idosos. Cada processo terapêutico é conduzido com base na singularidade de cada sujeito, valorizando o autoconhecimento e o desenvolvimento emocional em todas as fases da vida.",
+    },
   ],
+
   
   differentials: [
     {
@@ -164,9 +169,7 @@ const clinicConfig = {
 // ============================================
 
 export default function EscobarPsico() {
-  const [darkMode, setDarkMode] = useState(true);
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [darkMode, setDarkMode] = useState(true);  
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const { business, contact, theme, specializations, differentials, faqs } = clinicConfig;
